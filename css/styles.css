@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding:0;
+}
+:root {
+  --background: rgba(40, 214, 170, .85);
+}
+html body {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: 'Irish Grover', cursive;
+}
+img {
+  height: 12rem;
+  width: 12rem;
+  display: block;
+  margin: auto;
+}
+header {
+  background: var(--background);
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+.nav-toggle {
+  display: none;
+}
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border: 0 solid white;
+}
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: white;
+  height: 0.2rem;
+  width: 3.5em;
+  border-radius: 0.2rem;
+  position: relative;
+}
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: '';
+  position: absolute;
+}
+.nav-toggle-label span::before {
+  bottom: 0.5rem;
+}
+.nav-toggle-label span::after {
+  top: 0.5rem;
+}
+
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: var(--background);
+  width: 100%;
+  transform: scale(1, 0);
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1.3rem;
+}
+nav li {
+  margin-bottom: 0.5em;
+  margin-left: 0.5em;
+}
+nav a {
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+nav a:hover {
+  color: #000000;
+}
+.nav-toggle:checked ~ nav {
+}
