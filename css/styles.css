@@ -113,7 +113,7 @@ h1 {
   margin: auto;
   margin-bottom: 0.5rem;
 }
-.contain-about-us {
+#contain-about-us {
   font-family: 'Titillium Web', sans-serif;
   position: relative;
   text-align: center;
@@ -128,7 +128,7 @@ h1 {
   margin: auto;
   margin-bottom: 0.5rem;
 }
-.contain-gallery {
+#contain-gallery {
   font-family: 'Titillium Web', sans-serif;
   text-align: center;
   font-weight: 600;
@@ -147,22 +147,65 @@ h1 {
   justify-content: space-between;
   align-items: center;
 }
-.contain-gallery .gallery .gallery1 {
+#contain-gallery .gallery .gallery1 {
   display: flex;
   flex-direction: column;
   width: 32.5%;
 }
-.contain-gallery .gallery .gallery1 img{
+#contain-gallery .gallery .gallery1 img{
   width: 100%;
   height: 300px;
   padding-bottom: 1.5rem;
   border-radius: 0.5rem;
 }
-.contact-us {
+#contact-us {
   font-family: 'Titillium Web', sans-serif;
   text-align: center;
   font-size: 1.2rem;
 }
+#why-wonderland {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.2rem;
+}
+
+.why-images {
+  display: flex;
+  margin-top: 1rem;
+  background: var(--background);
+  justify-content: space-between;
+}
+
+.sec2, .sec3 {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: 20rem;
+  position: relative;
+  top: 1rem;
+}
+.sec1 {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+.why-images .sec1 .grad-photo-1 {
+  position: relative;
+  left: 0;
+  width: 35rem;
+  height: 42rem;
+}
+.why-images .photos {
+  height: 10rem;
+  width: 10rem;
+  position: relative;
+}
+.why-images p {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+
 footer  {
   font-family: 'Titillium Web', sans-serif;
   background-color: var(--background);
